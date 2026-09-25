@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://doi.org/example_RCO_doi",
+  "@type": "Collection",
+  "additionaltype": "ResearchCitationObject",
+  "name": "Minimal example of a research citation object with three linked digital objects.",
+  "description": "Example description of the research citation object.",
+  "creator": {
+    "@list": [
+      {
+        "@type": "Person",
+        "name": "Rebecca Ringuette"
+      },
+      {
+        "@type": "Organization",
+        "name": "Research Data Alliance, CCO working group"
+      }
+    ]
+  },
+  "datePublished": "2026-07-07",
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Integration and Services for Heliophysics"
+  },
+  "citation": {
+    "@list": [
+      {
+        "@id": "https://github.com/rebeccaringuette/SPASELists",
+        "@type": [
+          "SoftwareSourceCode", 
+          "SoftwareApplication"
+        ],
+        "applicationCategory": "metadata management",
+        "name": "SPASELists",
+        "offers": {
+        	"@type": "Offer",
+        	"price": 0,
+        	"priceCurrency": "USD"
+    	}
+      },
+      {
+        "@id": "https://doi.org/10.48322/6cfb-rq65",
+        "@type": "Dataset",
+        "name": "MMS 4 Hot Plasma Composition Analyzer (HPCA) Ions, Level 2 (L2), Burst Mode, 0.625 s Data",
+        "description": "Hot Plasma Composition Analyzer (HPCA) Ions, Level 2, Burst Survey, 0.625 s Data. The MMS HPCA instruments measure the energy and composition of magnetospheric plasmas in the energy range from 1 eV to 40 keV. An electrostatic energy analyzer (ESA) that is optically coupled to a carbon-foil based Time-of-Flight (TOF) section comprises each HPCA. The basic HPCA data product is an array of counts for 5 ion species, at 63 energies, for each of 16 elevation anodes. Sixteen basic products, also called azimuths, are acquired every 0.625 s; half a spacecraft spin period nominally has 16 azimuths. The five ion species are protons (H+), alpha particles (He++), helium ions (He+), singly charged Oxygen (O+), and background counts."
+      },
+      {
+        "@id": "https://spase-metadata.org/SMWG/Instrument/MMS/4/HotPlasmaCompositionAnalyzer.html"
+      }
+    ]
+  },
+  "subjectOf": {
+    "@id": "https://example.com/99152/URIforTheMetadata.json",
+    "@type": "DataDownload",
+    "additionalType": "dcat:CatalogRecord",
+    "dcterms:conformsTo": "https://w3id.org/cdif/complexCitation/0.1"
+  }
+}
