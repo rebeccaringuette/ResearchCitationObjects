@@ -1,8 +1,6 @@
 Schema.org JSON-LD as a metadata format provides not only a rich interoperable structure for describing a myriad of objects, it enables machine discoverability through infrastructure already implemented on the internet. This metadata is to be presented in a user-friendly format on all RCO landing pages for human use and embedded directly into each RCO landing page for machine-actionability.
 
-This folder contains the minimum requirements and several more complete examples of the schema.org JSON-LD metadata for RCOs. The current choice of "Collection" for the schema.org type may change to "Dataset" based on conversations with publishers, but the "Collection" type is agreed as the more correct choice. The choice of field names in schema.org and the supplementary vocabularies used are based on the current guidelines for expressing datasets on schema.org, where relevant, which is maintained by the ESIP Schema-Dot-Org Cluster (https://www.esipfed.org/collaboration-areas/schema-org/).
-
-All files have been tested using Schema.org's validator (https://validator.schema.org/) for correct JSON-LD and schema.org alignment. The minimum and "Google" examples also pass validation with Google's Rich Results tool (https://search.google.com/test/rich-results). This means that Google will not exclude the RCO landing page from indexing. Including landing pages into Google's index requires additional steps which are beyond the scope of this work.
+This folder contains the minimum requirements and several more examples of the Schema.org JSON-LD metadata for RCOs. The choice of field names in schema.org and the supplementary vocabularies used are based on the current guidelines for expressing datasets on schema.org, where relevant, which is maintained by the ESIP Schema-Dot-Org Cluster (https://www.esipfed.org/collaboration-areas/schema-org/).
 
 # Required Fields  
 The minimum metadata fields required for RCOs are primarily based on the metadata fields required by DataCite (https://datacite-metadata-schema.readthedocs.io/en/latest/, currently v4.7) and their mapping into Schema.org. We add the description and license fields based on the strong recommendation to do so in DataCite's documentation and elsewhere and the substantial benefit the fields lend to discoverability and reusability. These fields include:
@@ -59,3 +57,6 @@ Note the "@type" field is included here as it is required by the schema.org vali
 
 ## **prov:wasDerivedFrom** and **isBasedOn** 
 These two fields are also important to many use cases. Use _both_ of these fields to indicate when one resource was used to create another (e.g., a software created a dataset or figure). See examples for details.
+
+# Validation Resources
+All files have been tested using Schema.org's validator (https://validator.schema.org/) for correct JSON-LD and schema.org alignment. The minimum and "Google" examples also pass validation with Google's Rich Results tool (https://search.google.com/test/rich-results). This means that Google will not exclude the RCO landing page from indexing. Including landing pages into Google's index requires additional steps which are beyond the scope of this work. The current choice of "Collection" for the schema.org type may change to "Dataset" based on conversations with publishers, but the "Collection" type is agreed as the more correct choice.
